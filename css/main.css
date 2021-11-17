@@ -1,0 +1,17 @@
+/* reset */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* common */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrap{
+    font-size: 14px;
+}
+
+/* header 영역 */
+
