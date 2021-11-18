@@ -69,7 +69,7 @@ body .wrap .middle .co .font h1{
 }
 
 body .wrap .middle .co .font p{
-    margin-top: 130px;
+    margin-top: 150px;
     font-weight: 700;
     font-size: 20px;
 }
@@ -198,6 +198,10 @@ body .wrap .photo .bb a:hover::before {
     /* background: blue; */
     height: 100%;
 }
+.wrap .w .nav ul li i{
+    margin-top: 20px;
+    font-size: 40px;
+}
 
 .wrap .w .nav ul li a {
     display: block;
@@ -251,7 +255,7 @@ footer .bottom{
 
 footer .bottom span{
     /* background: orange; */
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 100px;
     float: left;
     padding: 30px 20px;
