@@ -135,7 +135,7 @@ body .wrap .photo .bb p {
 }
 body .wrap .photo .bb a{
     position: relative;
-    width: 0%;
+    width: 100%;
 }
 
 body .wrap .photo .bb a::before{
