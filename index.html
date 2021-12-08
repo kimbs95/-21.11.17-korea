@@ -7,20 +7,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>koreanair</title>
 
-    <!-- reset -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-
-    <!-- fontawessome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
-    <!-- custom css -->
     <link rel="stylesheet" href="css/main.css">
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="wrap clearfix">
+        <!-- header -->
+        <header>
+            <div class="inner-header clearfix::after">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="메인로고이미지">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">예매</a></li>
+                        <li><a href="#">공항</a></li>
+                        <li><a href="#">기내</a></li>
+                        <li><a href="#">스카이패스</a></li>
+                    </ul>
+                </nav>
+                <nav class="tnb">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- //header -->
+
+
+        <!-- section.main -->
+        <section class="main clearfix">
+            <!-- main 이미지 영역 -->
+            <div class="main-title">
+                <img src="images/airline.jpg" alt="#">
+                <h2>대한항공, ATW 2021년 올해의 항공사 수상</h2>
+            </div>
+            <div class="select clearfix">
+                <div class="button_select">
+                    <a href="#"><i class="fas fa-angle-left"></i></a>
+                    <p>
+                        1 / 3
+                    </p>
+                    <a href=""><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+            <!-- 일반,보너스 예약 영역 -->
+            <div class="main-title-search clearfix">
+                <div class="main-booking-box">
+                    <h3 class="booking">
+                        <span>
+                            <button class="nomal-trip">
+                                <a href="#">
+                                    <p>일반</p>
+                                </a>
+                            </button>
+                            <button class="item-trip">
+                                <a href="#">
+                                    <p>보너스</p>
+                                </a>
+                            </button>
+                            <button class="booking-etc">
+                                <a href="#">
+                                    <p><i class="fas fa-ellipsis-h"></i></p>
+                                </a>
+                            </button>
+                        </span>
+                    </h3>
+                    <!-- 출발지 도착지 영역 -->
+                    <div class="booking-from-to">
+                        <nav>
+                            <button calss="from">
+                                <a href="#">SEL
+                                    <p>서울</p>
+                                </a>
+                            </button>
+                            <button>
+                                <a href="#">
+                                    <i class="fas fa-sync-alt"></i>
+                                </a>
+                            </button>
+                            <button class="to">
+                                <a href="#">To
+                                    <p>도착</p>
+                                </a>
+                            </button>
+                        </nav>
+                    </div>
+                    <!-- 예약정보 영역 -->
+                    <div class="booking-info">
+                        <nav>
+                            <button class="booking-date clearfix">
+                                <a href="#">탑승일
+                                    <i class="far fa-calendar"></i>
+                                </a>
+                            </button>
+                            <button class="booking-person">
+                                <a href="#">성인 1명<i class="far fa-user"></i></a>
+                            </button>
+                            <select class="seatclass">
+                                <option><a href="#">일반석<i class="fas fa-angle-down"></i></a></option>
+                                <option><a href="#">프레스티지석<i class="fas fa-angle-down"></i></a></option>
+                                <option>일등석<i class="fas fa-angle-down"></i></option>
+                            </select>
+                            <div class="checkbox">
+                                <input type="checkbox"><span>가까운 날짜 함께 조회</span>
+                            </div>
+
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 예약조회, 체크인, 항공편현황 영역 -->
+        <section class="main-navi">
+            <div class="main-navi-bar">
+                <ul class="clearfix">
+                    <li class="mnb-item">
+                        <a href="#">
+                            <i class="far fa-calendar-check">예약 조회</i></a></li>
+                    <li class="mnb-item">
+                        <a href="#">
+                            <i class="far fa-check-square">체크인</i></a></li>
+                    <li class="mnb-item">
+                        <a href="#">
+                            <i class="far fa-calendar-alt">항공편 현황</i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="recommand clearfix">
+
+            <div class="recommand-trip">지금 떠나기 좋은 여행</div>
+            <div class="recommand-booking">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="images/la.jpg" alt="">
+                                <div class="recommand-text">
+                                    서울/인천 - 로스앤젤레스
+                                    <p class="rt-return">일반선 왕복</p>
+                                    <p class="recommand-money">KRW 1,532,800 ~</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="images/ny.jpg" alt="">
+                                <div class="recommand-text">
+                                    서울/인천 - 뉴욕/존 F. 케네디
+                                    <p class="rt-return">일반선 왕복</p>
+                                    <p class="recommand-money">KRW 1,789,500 ~</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="images/honolulu.jpg" alt="">
+                                <div class="recommand-text">
+                                    서울/인천 - 호놀룰루
+                                    <p class="rt-return">일반선 왕복</p>
+                                    <p class="recommand-money">KRW 1,408,800 ~</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="images/guam.jpg" alt="">
+                                <div class="recommand-text">
+                                    서울/인천 - 괌
+                                    <p class="rt-return">일반선 왕복</p>
+                                    <p class="recommand-money">KRW 640,700 ~</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="images/bk.jpg" alt="">
+                                <div class="recommand-text">
+                                    서울/인천 - 방콕
+                                    <p class="rt-return">일반선 왕복</p>
+                                    <p class="recommand-money">KRW 729,600 ~</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="columns clearfix">
+            <a href="#">
+                <div class="columns-main">
+                    <span class="columns-main-title">
+                        최저가 항공권 찾기
+                    </span>
+                    <p class="columns-main-text">
+                        최고의 서비스를 가장 합리적인 가격으로 이용할 수 있습니다.
+                    </p>
+                    <i class="far fa-hand-point-right"></i>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="columns-main">
+                    <span class="columns-main-title">
+                        이벤트 확인하기
+                    </span>
+                    <p class="columns-main-text">
+                        고객님을 위해 준비된 다채로운 혜택을 확인해보세요.
+                    </p>
+                    <i class="far fa-hand-point-right"></i>
+                </div>
+            </a>
+        </section>
+    
+
         <!--중간 작업 -->
         <div class="frap">
             <section class="middle">
@@ -80,7 +301,7 @@
                                 호텔
                                 <div>
                                     <i class="fas fa-h-square"></i>
-                                  </div>
+                                </div>
                             </a>
                         </li>
                         <li><a href="#">
@@ -116,48 +337,52 @@
             </div>
 
 
-    </div>
-    </section>
-    <footer>
-        <div class="vv clearfix">
-            <ul class="ai">
-                회사소개
-                <li><a href="#">대한항공에 대하여</a></li>
-                <li><a href="#">투자정보</a></li>
-                <li><a href="#">기업지배구조</a></li>
-            </ul>
-            <ul class="si">
-                고객지원
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">자주 묻는 질문</a></li>
-                <li><a href="#">서비스 센터</a></li>
-            </ul>
-            <ul class="di">
-                약관 및 규정
-                <li><a href="#">개인정보 처리방침</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">소비자 안전 관련 정보</a></li>
-            </ul>
-            <ul class="gi">
-                기타 안내
-                <li><a href="#">고객 안내 서비스</a></li>
-                <li><a href="#">항공교통이용자 서비스 계획</a></li>
-                <li><a href="#">항공교통이용자 피해 구제</a></li>
-            </ul>
-            
-        </div>
-
-        <div class="bottom clearfix">
-            <span>
-                (주) 대한항공 대표:아이섹외1명 주소:대전광역시 용문역 5번출구
-                전화번호 301.304.3205
-            </span>
-            
-            <div class="gkgk clearfix">
-                <a href="#"><img src="images/코리안.jpg" alt="챗봇"></a>
             </div>
-        </div>
-    </footer>
+        </section>
+        <footer>
+            <div class="vv clearfix">
+                <ul class="ai">
+                    회사소개
+                    <li><a href="#">대한항공에 대하여</a></li>
+                    <li><a href="#">투자정보</a></li>
+                    <li><a href="#">기업지배구조</a></li>
+                </ul>
+                <ul class="si">
+                    고객지원
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">서비스 센터</a></li>
+                </ul>
+                <ul class="di">
+                    약관 및 규정
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">소비자 안전 관련 정보</a></li>
+                </ul>
+                <ul class="gi">
+                    기타 안내
+                    <li><a href="#">고객 안내 서비스</a></li>
+                    <li><a href="#">항공교통이용자 서비스 계획</a></li>
+                    <li><a href="#">항공교통이용자 피해 구제</a></li>
+                </ul>
+
+            </div>
+
+            <div class="bottom clearfix">
+                <span>
+                    (주) 대한항공 대표:아이섹외1명 주소:대전광역시 용문역 5번출구
+                    전화번호 301.304.3205
+                </span>
+
+                <div class="gkgk clearfix">
+                    <a href="#"><img src="images/코리안.jpg" alt="챗봇"></a>
+                </div>
+            </div>
+        </footer>
     </div>
+
+
+
 </body>
-<!-- </html> -->
+
+</html>
